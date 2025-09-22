@@ -1,0 +1,19 @@
+// Algoritma Pencarian Linear
+digraph {
+	A [label=Start]
+	B [label="Baca Data Input"]
+	C [label="Inisialisasi Indeks = 0"]
+	D [label="Indeks < Panjang Data?"]
+	E [label="Data[Indeks] == Target?"]
+	F [label="Cetak \"Ditemukan\""]
+	G [label="Indeks += 1"]
+	H [label="Cetak \"Tidak Ditemukan\""]
+	I [label=End]
+	A -> B
+	B -> C
+	C -> D
+	D -> E
+	E -> G
+	G -> H
+	H -> I
+}

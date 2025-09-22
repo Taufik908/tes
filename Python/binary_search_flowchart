@@ -1,0 +1,29 @@
+// Algoritma Binary Search
+digraph {
+	A [label=Start]
+	B [label="Baca Data Input (sorted)"]
+	C [label="Inisialisasi low=0, high=n-1"]
+	D [label="low <= high?"]
+	E [label="mid = (low+high)//2"]
+	F [label="Data[mid] == Target?"]
+	G [label="Cetak \"Ditemukan\""]
+	H [label="Data[mid] < Target?"]
+	I [label="low = mid+1"]
+	J [label="high = mid-1"]
+	K [label="Cetak \"Tidak Ditemukan\""]
+	L [label=End]
+	A -> B
+	B -> C
+	C -> D
+	D -> E [label=Ya]
+	D -> K [label=Tidak]
+	E -> F
+	F -> G [label=Ya]
+	F -> H [label=Tidak]
+	G -> L
+	H -> I [label=Ya]
+	H -> J [label=Tidak]
+	I -> D
+	J -> D
+	K -> L
+}
